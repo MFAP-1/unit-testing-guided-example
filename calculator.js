@@ -1,17 +1,41 @@
 function sum(a, b) {
-  return;
+  if (a !== undefined && b != undefined) {
+    return a + b;
+  } else if (a !== undefined ) {
+    return a;
+  } else if (b !== undefined ) {
+    return b;
+  } else {
+    return 0;
+  }
 }
 
 function subtract(a, b) {
-  return;
+  if (a !== undefined && b != undefined) {
+    return a - b;
+  } else if (a !== undefined ) {
+    return a;
+  } else if (b !== undefined ) {
+    return b;
+  } else {
+    return 0;
+  }
 }
 
 function divide(a, b) {
-  return;
+  if (b === 0){
+    throw new Error('An explanatory error message');
+  } else {
+    return a / b;
+  }
 }
 
 function multiply(a, b) {
-  return a * b;
+  if (a !== undefined && b != undefined) {
+    return a * b;
+  } else {
+    return 0;
+  }
 }
 
 // The following is required to make unit tests work. Please ignore it.
